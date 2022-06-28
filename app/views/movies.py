@@ -13,21 +13,7 @@ class MoviesView(Resource):
         return movies_schema.dump(all_movies), 200
 
 
-    # GET / movies?director_id = 15 — получить
-    # все
-    # фильмы
-    # режиссера.
-
-    # GET / movies?genre_id = 3 — получить
-    # все
-    # фильмы
-    # жанра.
-
-    # GET / movies?year = 2007 — получить
-    # все
-    # фильмы
-    # за
-    # год.
+    
 
     def post(self):
         req_json = request.json
